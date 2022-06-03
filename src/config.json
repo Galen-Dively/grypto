@@ -1,0 +1,9 @@
+{
+  "Config":
+  {
+    "Host": "localhost",
+    "User": "root",
+    "Password": "",
+    "Database": "grypto"
+  }
+}
