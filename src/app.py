@@ -5,11 +5,11 @@ from src.getCoins import getCoins
 class App:
     def __init__(self):
         self.coins = getCoins()
-        print(self.coins)
         self.databaseManager = DatabaseManager()
         # write to database
         for coin in self.coins:
-            self.databaseManager.insertData({"Name"})
+            self.databaseManager.insertData({"Name": "cryptos", "Vars": ["DayChange", "Name", "Price"]}, [coin["Day Change"].replace("%", ""), coin["Name"], coin["Price"]])
+
 
         # # debuging
         # self.databaseManager.createTable("Cryptos", columns=[{"Name": "Price", "Datatype": "VARCHAR(255)"},
